@@ -16,7 +16,7 @@ jobs:
   job-job-var:
     runs-on: ubuntu-latest
     env:
-      JOB_PYTHON_VERSION: 3.10
+      JOB_PYTHON_VERSION: 3.8
     steps:
       - name: checkout code
         uses: actions/checkout@v5
