@@ -1,4 +1,4 @@
-name: Build python workflow-repo var
+name: Build python workflow-repo var2
 on:
   push:
 jobs:
@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Setup python
+      - name: Setup Python
         env:
-          VERSION: ${{ vars.PYTHON_VERSION }}  #VERSION = 3.9 # repo variable
+          VERSION: ${{ vars.PYTHON_VERSION }}  #VERSION = 3.9
         uses: actions/setup-python@v5
         with:
           python-version: $VERSION  # step variable
